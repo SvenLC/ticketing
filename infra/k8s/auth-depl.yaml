@@ -5,8 +5,8 @@ metadata:
 spec:
   replicas: 1
   selector:
-    matchLables:
-      app: atuh
+    matchLabels:
+      app: auth
   template:
     metadata:
       labels:
@@ -17,11 +17,11 @@ spec:
           image: svenlc/auth
           resources:
             requests:
-              memory: "256Mi"
-              cpu: "250m"
+              memory: '256Mi'
+              cpu: '250m'
             limits:
-              memory: "512Mi"
-              cpu: "500m"
+              memory: '512Mi'
+              cpu: '500m'
 ---
 apiVersion: v1
 kind: Service
